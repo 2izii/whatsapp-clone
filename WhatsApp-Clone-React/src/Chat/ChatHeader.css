@@ -1,0 +1,109 @@
+/* Estilo para o cabeçalho do chat */
+.chat__header {
+    padding: 8px; /* Adiciona um espaçamento interno de 8 pixels */
+    display: flex; /* Usa um layout flexível para organizar os elementos internos */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    border-bottom: 1px solid lightgray; /* Adiciona uma borda inferior de 1 pixel de cor cinza claro */
+    transition: 1s; /* Aplica uma transição de 1 segundo para suavizar mudanças de estilo */
+}
+
+/* Estilos para a parte direita do cabeçalho do chat */
+.chat__headerRight {
+    display: flex; /* Usa um layout flexível para organizar os elementos internos */
+    justify-content: space-between; /* Distribui o espaço uniformemente entre os elementos filhos */
+    min-width: 100px; /* Define a largura mínima para 100 pixels */
+} 
+
+/* Estilos para o avatar no cabeçalho do chat */
+.chat__header > .MuiAvatar-root {
+    margin-left: 8px; /* Adiciona uma margem à esquerda de 8 pixels para o avatar */
+}
+
+/* Estilos para as informações do chat no cabeçalho */
+.chat__headerInfo {
+    flex: 1; /* Permite que o elemento cresça e ocupe todo o espaço disponível */
+    padding-left: 20px; /* Adiciona um espaçamento interno à esquerda de 20 pixels */
+}
+
+/* Estilos para o título do chat no cabeçalho */
+.chat__headerInfo > h3 {
+    font-weight: 500; /* Define o peso da fonte como 500 (semi-negrito) */
+}
+
+/* Estilos para o parágrafo no cabeçalho do chat */
+.chat__headerInfo > p {
+    color: #4a4a4a; /* Define a cor do texto como cinza */
+}
+
+/* Estilos para o cabeçalho do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerHeader {
+    background-color: #00BFA5; /* Define a cor de fundo como verde claro */
+}
+
+/* Estilos para o contêiner no cabeçalho do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerHeader_container {
+    display: flex; /* Usa um layout flexível para organizar os elementos internos */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Estilos para o parágrafo no contêiner do cabeçalho do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerHeader_container > p{
+    color: white; /* Define a cor do texto como branco */
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+    font-weight: 500; /* Define o peso da fonte como 500 (semi-negrito) */
+}
+
+/* Estilos para o botão no contêiner do cabeçalho do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerHeader_container > .MuiIconButton-root {
+    color: white !important; /* Define a cor do ícone como branco */
+    margin: 0 10px 0 10px; /* Adiciona margens ao botão */
+}
+
+/* Estilos para o conteúdo do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerContent {
+    background-color: #E6E6E6; /* Define a cor de fundo como cinza claro */
+    height: 100%; /* Define a altura como 100% */
+}
+
+/* Estilos para a foto no conteúdo do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerContent_photo {
+    width: 100%; /* Define a largura como 100% */
+    display: flex; /* Usa um layout flexível para organizar os elementos internos */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+}
+
+/* Estilos para a imagem no conteúdo do menu de anexo de arquivo no chat */
+.chat__attachFile_drawerContent_photo > img {
+    height: 244px; /* Define a altura da imagem como 244 pixels */
+}
+
+/* Estilos para telas com largura máxima de 600 pixels */
+@media screen and (max-width: 600px) {
+    .chat__header {
+        padding: 6px; /* Altera o espaçamento interno para 6 pixels */
+        position: sticky; /* Define a posição como 'sticky' para que o cabeçalho fique fixo na parte superior da tela ao rolar */
+        top: 0; /* Define a distância do topo como 0 */
+        z-index: 100; /* Define a ordem de empilhamento como 100 */
+        background-color: #045E54; /* Define a cor de fundo como verde mais escura */
+    }
+    .chat__headerRight {
+        min-width: 80px; /* Define a largura mínima como 80 pixels */
+    }
+    .chat__headerInfo {
+        padding-left: 6px; /* Altera o espaçamento interno à esquerda para 6 pixels */
+    }
+    .chat__headerInfo > h3 {
+        color: white; /* Define a cor do texto como branco */
+    }
+    .chat__headerInfo > p {
+        font-size: 12px; /* Define o tamanho da fonte como 12 pixels */
+        color: white; /* Define a cor do texto como branco */
+    }
+    .MuiIconButton-root {
+        padding: 5px!important; /* Altera o espaçamento interno do ícone para 5 pixels */
+    }
+    .MuiIconButton-root {
+        color: white !important; /* Define a cor do ícone como branco */
+    }
+}

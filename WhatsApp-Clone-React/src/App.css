@@ -1,0 +1,96 @@
+/* O código abaixo define estilos para elementos com a classe 'app'. */
+
+/* Estiliza o elemento com a classe 'app'. */
+.app {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do elemento. */
+  align-items: center; /* Centraliza verticalmente o conteúdo dentro do elemento. */
+  background-color: #dadbd3; /* Define a cor de fundo. */
+  height: 100vh; /* Define a altura do elemento como 100% da altura da viewport. */
+  z-index: 100; /* Define a ordem de empilhamento, usado para controlar a sobreposição de elementos. */
+  overflow: hidden; /* Esconde qualquer conteúdo que transborde do elemento. */
+  position: relative; /* Define o posicionamento relativo para que elementos filhos possam ter posicionamento absoluto em relação a este elemento. */
+  width: 100vw; /* Define a largura do elemento como 100% da largura da viewport. */
+}
+
+/* Estiliza o elemento com a classe 'app__body'. */
+.app__body {
+  display: flex; /* Estabelece um contexto de formatação em linha para os filhos do elemento. */
+  position: fixed; /* Fixa o elemento na posição especificada na viewport. */
+  background-color: #ededed; /* Define a cor de fundo. */
+  height: 100vh; /* Define a altura do elemento como 100% da altura da viewport. */
+  max-height: 900px; /* Define a altura máxima do elemento para 900 pixels. */
+  width: 100vw; /* Define a largura do elemento como 100% da largura da viewport. */
+  max-width: 1400px; /* Define a largura máxima do elemento para 1400 pixels. */
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao elemento. */
+}
+
+/* Estiliza o elemento com a classe 'app__loading'. */
+.app__loading {
+  display: table; /* Estabelece um contexto de formatação de tabela para os filhos do elemento. */
+  text-align: center; /* Define o alinhamento do texto no centro. */
+  height: 100%; /* Define a altura do elemento como 100% do elemento pai. */
+  width: 350px; /* Define a largura do elemento como 350 pixels. */
+}
+
+/* Estiliza elementos filhos de 'app__loading'. */
+.app__loading > div {
+  display: table-cell; /* Estabelece um contexto de formatação de célula de tabela para os filhos do elemento. */
+  vertical-align: middle; /* Alinha os elementos verticalmente ao centro. */
+}
+
+/* Estiliza elementos filhos de 'app__loading'. */
+.app__loading > div > .app__loading_circular {
+  margin-top: 100px !important; /* Define uma margem superior de 100 pixels para os elementos com a classe 'app__loading_circular'. */
+}
+
+/* Estiliza elementos filhos de 'app__loading'. */
+.app__loading > div > .app__loading_linear .MuiLinearProgress-root {
+  margin-top: 100px !important; /* Define uma margem superior de 100 pixels para os elementos com a classe 'MuiLinearProgress-root'. */
+}
+
+/* Estiliza elementos com a classe 'MuiCircularProgress-colorPrimary'. */
+.MuiCircularProgress-colorPrimary {
+  color: gray !important; /* Define a cor cinza para elementos com a classe 'MuiCircularProgress-colorPrimary'. */
+}
+
+/* Estiliza elementos com a classe 'MuiLinearProgress-barColorPrimary'. */
+.MuiLinearProgress-barColorPrimary {
+  background-color: #15c39a !important; /* Define a cor de fundo para elementos com a classe 'MuiLinearProgress-barColorPrimary'. */
+}
+
+/* Estiliza elementos com a classe 'app-no-bg'. */
+.app-no-bg {
+  z-index: auto; /* Define a ordem de empilhamento automática para elementos com a classe 'app-no-bg'. */
+}
+
+/* Estilos para telas com largura máxima de 600 pixels. */
+@media screen and (max-width: 600px) {
+  .app__body {
+    display: inline; /* Altera o contexto de formatação para 'inline'. */
+  }
+  .app__loading {
+    width: 200px; /* Define a largura como 200 pixels para telas com largura máxima de 600 pixels. */
+  }
+}
+
+/* Estilos para telas com largura máxima de 1440 pixels. */
+@media screen and (max-width: 1440px) {
+  .app__body {
+    max-height: 100vh; /* Define a altura máxima como 100% da viewport para telas com largura máxima de 1440 pixels. */
+    margin-top: 0; /* Remove a margem superior. */
+  }
+}
+
+/* Estilos para telas com largura mínima de 1441 pixels. */
+@media screen and (min-width: 1441px) {
+  .app::after {
+    position: fixed; /* Fixa o elemento na posição especificada na viewport. */
+    top: 0; /* Define a posição superior como 0. */
+    z-index: -1; /* Define a ordem de empilhamento como -1. */
+    width: 100%; /* Define a largura como 100%. */
+    height: 127px; /* Define a altura como 127 pixels. */
+    content: ""; /* Adiciona conteúdo vazio ao elemento gerado. */
+    background-color: #009688; /* Define a cor de fundo. */
+  }
+}

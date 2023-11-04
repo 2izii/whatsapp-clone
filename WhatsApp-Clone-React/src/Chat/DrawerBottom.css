@@ -1,0 +1,128 @@
+/* Estilo para o cabeçalho do DrawerBottom */
+.drawerBottom__header {
+  background-color: #00bfa5; /* Cor de fundo verde */
+}
+
+/* Estilo para o contêiner no cabeçalho, que contém o título e o botão de fechar */
+.drawerBottom__header_container {
+  display: flex; /* Configurando o contêiner como um flex container */
+  align-items: center; /* Alinhando os itens verticalmente ao centro */
+}
+
+/* Estilo para o título no cabeçalho */
+.drawerBottom__header_container > p {
+  color: white; /* Cor do texto branca */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: 500; /* Peso da fonte */
+}
+
+/* Estilo para o botão de fechar no cabeçalho, usando a classe do Material-UI */
+.drawerBottom__header_container > .MuiIconButton-root {
+  color: white !important; /* Cor do ícone branca, importante para substituir estilos padrão */
+  margin: 0 10px 0 10px; /* Margens do botão */
+}
+
+/* Estilo para o conteúdo principal do DrawerBottom */
+.drawerBottom__content {
+  background-color: #e6e6e6; /* Cor de fundo cinza claro */
+  height: 100%; /* Altura 100% */
+}
+
+/* Estilo para a seção de visualização da foto no conteúdo */
+.drawerBottom__content_photo {
+  width: 100%; /* Largura 100% */
+  display: flex; /* Configurando como flex container */
+  align-items: center; /* Alinhando os itens verticalmente ao centro */
+  justify-content: center; /* Alinhando os itens horizontalmente ao centro */
+  max-height: 800px; /* Altura máxima da foto */
+}
+
+/* Estilo para a seção de visualização do vídeo no conteúdo */
+.drawerBottom__content_video {
+  height: 300px; /* Altura do vídeo */
+  width: 100%; /* Largura 100% */
+}
+
+/* Estilo para a wrapper do player de vídeo */
+.drawerBottom__content_video > .player-wrapper {
+  margin: 0 auto; /* Margens do player de vídeo */
+  margin-top: 30px !important; /* Margem superior do player de vídeo, importante para substituir estilos padrão */
+}
+
+/* Estilo para a imagem na seção de visualização da foto */
+.drawerBottom__content_photo > img {
+  height: 500px; /* Altura da imagem */
+  margin: 20px 0 20px 0; /* Margens da imagem */
+}
+
+/* Estilo para a seção da legenda do conteúdo */
+.drawerBottom__content_caption {
+  margin: 20px 120px 20px 120px; /* Margens da seção da legenda */
+}
+
+/* Estilo para o botão de enviar na seção da legenda */
+.drawerBottom__content_caption > .MuiFab-root {
+  position: absolute; /* Posição absoluta para o botão */
+  right: 45px; /* Distância da borda direita */
+  bottom: 110px; /* Distância da borda inferior */
+  background-color: #09e85e; /* Cor de fundo verde claro */
+}
+
+/* Estilo para o botão de enviar quando hover na seção da legenda */
+.drawerBottom__content_caption > .MuiFab-root:hover {
+  background-color: #09e85e; /* Cor de fundo verde claro quando hover */
+}
+
+/* Estilo para a entrada de texto da legenda */
+.drawerBottom__content_caption > input {
+  width: 100%; /* Largura 100% */
+  background-color: #e6e6e6; /* Cor de fundo cinza claro */
+  outline: 0; /* Removendo a borda de foco */
+  border-width: 0 0 2px; /* Configurando a borda inferior */
+  border-color: #00bfa5; /* Cor da borda inferior verde */
+  padding: 5px 0 5px 0; /* Preenchimento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  color: gray; /* Cor do texto cinza */
+}
+
+/* Estilo para o rodapé do DrawerBottom */
+.drawerBottom__footer {
+  align-items: center; /* Alinhando os itens verticalmente ao centro */
+  align-content: center; /* Alinhando o conteúdo ao centro */
+  height: 140px; /* Altura do rodapé */
+  background-color: #d9d9d9; /* Cor de fundo cinza claro */
+  padding: 20px 50px 20px 50px; /* Preenchimento interno do rodapé */
+  text-align: center; /* Alinhamento do texto ao centro */
+}
+
+/* Estilo para a imagem no rodapé */
+.drawerBottom__footer > div > img {
+  margin: 0 auto; /* Margens automáticas na horizontal e no topo/bottom */
+  max-height: 78px; /* Altura máxima da imagem */
+}
+
+/* Estilos responsivos para telas com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+  /* Estilo para a imagem na seção de visualização da foto em telas pequenas */
+  .drawerBottom__content_photo > img {
+    max-height: 150px; /* Altura máxima da imagem */
+    margin: 20px 0 20px 0; /* Margens da imagem */
+  }
+  
+  /* Estilo para a seção da legenda em telas pequenas */
+  .drawerBottom__content_caption {
+    margin: 20px 40px 20px 20px; /* Margens da seção da legenda */
+  }
+  
+  /* Estilo para o conteúdo em telas pequenas */
+  .drawerBottom__content {
+    background-color: #e6e6e6; /* Cor de fundo cinza claro */
+    height: 100vh; /* Altura 100% da viewport */
+  }
+  
+  /* Estilo para o rodapé em telas pequenas */
+  .drawerBottom__footer {
+    height: 140px; /* Altura do rodapé */
+    padding: 20px 50px 20px 50px; /* Preenchimento interno do rodapé */
+  }
+}

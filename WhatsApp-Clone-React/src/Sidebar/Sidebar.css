@@ -1,0 +1,101 @@
+/* Define as regras de estilo para o elemento com a classe 'sidebar'. */
+.sidebar {
+  display: flex; /* Estabelece o layout flexível para os elementos filhos. */
+  flex-direction: column; /* Organiza os elementos em coluna. */
+  flex: 0.3; /* Estabelece a largura flexível do elemento, ocupando 30% do espaço disponível. */
+  max-width: 30vw; /* Estabelece a largura máxima do elemento como 30% da largura da viewport. */
+  min-width: 20vw; /* Estabelece a largura mínima do elemento como 20% da largura da viewport. */
+  position: relative; /* Estabelece a posição do elemento como relativa. */
+}
+
+/* Define as regras de estilo para o elemento com a classe 'sidebar__header'. */
+.sidebar__header {
+  display: flex; /* Estabelece o layout flexível para os elementos filhos. */
+  justify-content: space-between; /* Alinha os elementos ao longo do eixo principal com espaçamento uniforme. */
+  padding: 8px; /* Adiciona preenchimento interno de 8 pixels. */
+  border-right: 1px solid lightgray; /* Adiciona uma borda à direita com cor e espessura especificadas. */
+}
+
+/* Define as regras de estilo para o avatar dentro de '.sidebar__header > div > .MuiAvatar-root'. */
+.sidebar__header > div > .MuiAvatar-root {
+  margin-left: 10px; /* Adiciona margem à esquerda do avatar. */
+  margin-top: 5px; /* Adiciona margem superior ao avatar. */
+  cursor: pointer; /* Define o cursor do mouse como 'pointer' para indicar interatividade. */
+}
+
+/* Define as regras de estilo para o lado direito do cabeçalho '.sidebar__headerRight'. */
+.sidebar__headerRight {
+  display: flex; /* Estabelece o layout flexível para os elementos filhos. */
+  align-items: center; /* Alinha os elementos ao longo do eixo transversal (vertical). */
+  justify-content: space-between; /* Alinha os elementos ao longo do eixo principal com espaçamento uniforme. */
+  min-width: 10vw; /* Estabelece a largura mínima do elemento como 10% da largura da viewport. */
+}
+
+/* Define as regras de estilo para os ícones do Material-UI dentro de '.sidebar__headerRight > .MuiSvgIcon-root'. */
+.sidebar__headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw; /* Adiciona margem à direita do ícone. */
+  font-size: 24px !important; /* Define o tamanho da fonte do ícone. */
+}
+
+/* Define as regras de estilo para o elemento com a classe 'sidebar__chats'. */
+.sidebar__chats {
+  background-color: white; /* Define a cor de fundo como branco. */
+  flex: 1; /* Estabelece o elemento como flexível, ocupando o restante do espaço disponível. */
+  overflow: scroll; /* Adiciona uma barra de rolagem quando o conteúdo ultrapassa as dimensões do contêiner. */
+  -ms-overflow-style: none; /* Esconde a barra de rolagem no Internet Explorer 10+. */
+  scrollbar-width: none; /* Esconde a barra de rolagem no Safari e Chrome. */
+}
+
+/* Esconde a barra de rolagem no Safari e Chrome. */
+.sidebar__chats::-webkit-scrollbar {
+  display: none;
+}
+
+/* Define as regras de estilo para o contêiner de salas vazio com a classe 'sidebar__chatsContainer_empty_displayNone'. */
+.sidebar__chatsContainer_empty_displayNone {
+  display: none; /* Esconde o contêiner de salas vazio. */
+}
+
+/* Define as regras de estilo para o contêiner de salas vazio com a classe 'sidebar__chatsContainer_empty'. */
+.sidebar__chatsContainer_empty {
+  text-align: center; /* Centraliza o texto no contêiner. */
+  height: 100%; /* Define a altura como 100% do contêiner pai. */
+  width: 100%; /* Define a largura como 100% do contêiner pai. */
+  display: table; /* Define o elemento como uma tabela. */
+}
+
+/* Define as regras de estilo para o texto no contêiner de salas vazio. */
+.sidebar__chatsContainer_empty > span {
+  display: table-cell; /* Define o elemento como uma célula da tabela. */
+  vertical-align: middle; /* Alinha verticalmente o conteúdo no meio da célula. */
+  color: #a7a7a7; /* Define a cor do texto. */
+  font-size: 14px; /* Define o tamanho da fonte. */
+}
+
+/* Define as regras de estilo para o contêiner de salas durante o carregamento com a classe 'sidebar__chatsContainer_loading'. */
+.sidebar__chatsContainer_loading {
+  display: table; /* Define o elemento como uma tabela. */
+  text-align: center; /* Centraliza o texto no contêiner. */
+  width: 100%; /* Define a largura como 100% do contêiner pai. */
+  height: 100%; /* Define a altura como 100% do contêiner pai. */
+}
+
+/* Define as regras de estilo para o indicador de progresso no contêiner de salas durante o carregamento. */
+.sidebar__chatsContainer_loading > div {
+  display: table-cell; /* Define o elemento como uma célula da tabela. */
+  vertical-align: middle; /* Alinha verticalmente o conteúdo no meio da célula. */
+}
+
+/* Define as regras de estilo responsivas para telas com largura máxima de 600px. */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    flex: 1 !important; /* Ocupa todo o espaço disponível. */
+    width: 100vw; /* Define a largura como 100% da viewport. */
+    min-width: 100vw; /* Define a largura mínima como 100% da viewport. */
+    height: 100%; /* Define a altura como 100% do contêiner pai. */
+    background-color: #045e54; /* Define a cor de fundo. */
+  }
+  .sidebar__headerRight {
+    min-width: 40vw; /* Define a largura mínima como 40% da viewport. */
+  }
+}

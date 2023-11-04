@@ -1,0 +1,170 @@
+/* Estilos para o painel lateral direito */
+
+/* Estilo do cabeçalho do painel lateral direito */
+.drawer-right-info__header {
+  background-color: #ededed; /* Cor de fundo do cabeçalho */
+  height: 65px; /* Altura do cabeçalho */
+  padding-left: 8px; /* Espaçamento interno à esquerda */
+  display: flex; /* Layout em linha */
+  align-items: center; /* Alinhamento vertical */
+}
+
+.drawerRight__header_container {
+  display: flex;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+
+.drawer-right-info > .MuiIconButton-root {
+  color: black; /* Cor do ícone do botão */
+  font-size: 18px; /* Tamanho do texto do ícone */
+}
+
+.drawer-right-info > p {
+  color: black; /* Cor do texto */
+  font-weight: 400; /* Peso da fonte */
+  font-size: 16px; /* Tamanho do texto */
+  margin-left: 10px; /* Espaçamento à esquerda */
+}
+
+/* Estilos para o conteúdo do painel lateral direito */
+.drawer-right-info-content {
+  display: flex; /* Layout em coluna */
+  flex-direction: column; /* Direção da coluna */
+  overflow: scroll; /* Rolagem */
+  -ms-overflow-style: none; /* Estilo de rolagem no Internet Explorer */
+  scrollbar-width: none; /* Largura da barra de rolagem */
+  background-color: white; /* Cor de fundo */
+  flex: 1; /* Cresce para ocupar o espaço disponível */
+  min-width: 340px; /* Largura mínima */
+  /* max-width: 340px; */ /* Largura máxima (comentado) */
+}
+
+/* Ocultar barra de rolagem em navegadores compatíveis */
+.drawer-right-info-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos para a seção de foto de perfil */
+.drawer-right-info-content__photo {
+  height: 200px; /* Altura da seção de foto */
+  padding-top: 8px; /* Espaçamento interno superior */
+  padding-bottom: 30px; /* Espaçamento interno inferior */
+  margin: 0 auto; /* Margem automática */
+}
+
+/* Estilos para a foto de perfil */
+.drawer-right-info-content__photo > .MuiAvatar-root {
+  height: 200px; /* Altura do avatar */
+  width: 200px; /* Largura do avatar */
+}
+
+/* Estilos para a camada inferior da foto de perfil */
+.profilePhoto > .MuiAvatar-root {
+  height: 200px !important; /* Altura do avatar (importante para substituir o estilo anterior) */
+  width: 200px !important; /* Largura do avatar (importante para substituir o estilo anterior) */
+}
+
+/* Estilos para a camada superior da foto de perfil (ao passar o mouse) */
+.profilePhoto .profilePhoto__layer_top {
+  opacity: 0; /* Opacidade inicial */
+  position: absolute; /* Posição absoluta */
+  top: 0; /* Parte superior */
+  left: 0; /* Parte esquerda */
+  right: 0; /* Parte direita */
+  bottom: 0; /* Parte inferior */
+  width: 100%; /* Largura de 100% */
+  height: 100%; /* Altura de 100% */
+  border-radius: 50%; /* Borda arredondada */
+  background: rgba(107, 101, 101, 0.6); /* Cor de fundo com opacidade */
+  color: #fff; /* Cor do texto */
+  transition: all 0.4s ease-in-out 0s; /* Transição suave com duração de 0,4 segundos */
+}
+
+/* Estilos para a exibição da camada superior ao passar o mouse ou quando ativo */
+.profilePhoto:hover .profilePhoto__layer_top,
+.profilePhoto.active .profilePhoto__layer_top {
+  opacity: 1; /* Torna a camada superior visível */
+}
+
+/* Estilos para o texto sobreposto à foto de perfil */
+.profilePhoto__text {
+  display: flex; /* Layout em linha */
+  flex-direction: column; /* Direção da coluna */
+}
+
+/* Estilos para o campo de entrada de texto do nome com borda inferior e foco */
+.drawerLeft__content_name > form > input {
+  border: none; /* Sem borda */
+  border-bottom: 2px solid #00bfa5 !important; /* Borda inferior com cor específica (importante para substituir o estilo anterior) */
+  font-size: 17px; /* Tamanho da fonte */
+  color: #666666; /* Cor do texto */
+  width: 100%; /* Largura de 100% */
+}
+
+/* Estilos para o texto do nome quebrando com reticências quando não couber */
+.drawerLeft__content_name > form > span {
+  border: none; /* Sem borda */
+  font-size: 17px; /* Tamanho da fonte */
+  color: #666666; /* Cor do texto */
+  width: 100%; /* Largura de 100% */
+  white-space: nowrap; /* Não permite quebras de linha */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa a largura */
+  text-overflow: ellipsis; /* Adiciona reticências quando o texto ultrapassa a largura */
+}
+
+/* Estilos para o ícone de câmera para upload de foto de perfil */
+.profileMenu_uploadPhoto_iconButton {
+  position: absolute; /* Posição absoluta */
+  bottom: 20px; /* Espaçamento inferior */
+  right: 40px; /* Espaçamento direito */
+}
+
+/* Estilos para o título do diálogo do painel lateral esquerdo */
+#form-dialog-title-drawerLeft {
+  background-color: #00bfa5 !important; /* Cor de fundo do título do diálogo (importante para substituir o estilo anterior) */
+}
+
+/* Estilos para o conteúdo do diálogo do painel lateral esquerdo */
+#form-dialog-content {
+  padding: 0 !important; /* Sem preenchimento interno (importante para substituir o estilo anterior) */
+}
+
+/* Estilos para o contêiner de upload de foto de perfil */
+.profileMenu_uploadPhoto > label {
+  cursor: pointer; /* Cursor de ponteiro para o rótulo */
+}
+
+/* Oculta o campo de upload de arquivo */
+.profileMenu_uploadPhoto > input {
+  display: none; /* Não exibe o campo de entrada de arquivo */
+}
+
+/* Estilos para a imagem no diálogo de upload de foto de perfil */
+.profileMenu__uploadPhoto_dialog > img {
+  width: 400px; /* Largura da imagem */
+  height: auto; /* Altura automática para manter a proporção */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos para o botão de upload de foto de perfil */
+.profileMenu_uploadPhoto_iconButton > .MuiIconButton-root {
+  color: white !important; /* Cor do ícone (importante para substituir o estilo anterior) */
+  background-color: #09e85e; /* Cor de fundo do botão */
+}
+
+/* Estilos para o botão de upload de foto de perfil ao passar o mouse */
+.profileMenu_uploadPhoto_iconButton > .MuiIconButton-root:hover {
+  color: white !important; /* Cor do ícone (importante para substituir o estilo anterior) */
+  background-color: #09e85e; /* Cor de fundo do botão */
+}
+
+/* Estilos específicos para telas menores (largura máxima de 600px) */
+@media screen and (max-width: 600px) {
+  .drawer-right-info__header {
+    background-color: #045e54; /* Cor de fundo do cabeçalho em telas menores */
+  }
+  .drawer-right-info__headers > p {
+    color: white; /* Cor do texto em telas menores */
+  }
+}

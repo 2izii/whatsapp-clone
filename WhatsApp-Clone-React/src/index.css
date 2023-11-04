@@ -1,0 +1,34 @@
+/* Define estilos para o elemento <body>, que representa o corpo do documento HTML. */
+
+/* Remove margens padrão do corpo da página. */
+body {
+    margin: 0;
+  }
+  
+  /* Define a família de fontes a ser usada para o corpo da página. 
+     Esta lista de fontes será usada em ordem de prioridade, ou seja, 
+     o navegador tentará usar a primeira fonte listada, e se não estiver 
+     disponível, tentará a próxima fonte na lista, e assim por diante. */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+  
+  /* Suaviza as bordas e os contornos das fontes para melhorar a legibilidade 
+     em telas de alta resolução. Isso melhora a qualidade de renderização da 
+     fonte no macOS. */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Define estilos para o elemento <code>, que é usado para representar código 
+     no documento HTML, como trechos de programação. */
+  
+  /* Define a família de fontes específica para o elemento <code>. */
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

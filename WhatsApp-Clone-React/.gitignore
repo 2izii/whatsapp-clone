@@ -1,0 +1,29 @@
+# Veja https://help.github.com/articles/ignoring-files/ para mais informações sobre ignorar arquivos.
+node_modules
+# Ignorar arquivos e diretórios específicos relacionados à configuração do Firebase.
+src/firebase.js        # Ignorar arquivo de configuração do Firebase no diretório de código-fonte.
+firebase.json          # Ignorar arquivo JSON de configuração do Firebase.
+.firebase              # Ignorar diretório de configuração específico do Firebase.
+
+# Ignorar dependências e arquivos relacionados.
+/node_modules          # Ignorar o diretório node_modules contendo as dependências do projeto.
+/.pnp                  # Ignorar arquivo Plug'n'Play usado por alguns gerenciadores de pacotes.
+.pnp.js                # Ignorar arquivo JavaScript do Plug'n'Play.
+
+# Ignorar arquivos e diretórios relacionados a testes.
+/coverage              # Ignorar relatórios de cobertura gerados por ferramentas de teste.
+
+# Ignorar arquivos de construção para produção.
+/build                 # Ignorar arquivos de construção gerados para implantação em produção.
+
+# Ignorar arquivos diversos e arquivos de configuração específicos do ambiente.
+.DS_Store              # Ignorar arquivos de sistema do macOS.
+.env.local             # Ignorar arquivo de configuração de ambiente local.
+.env.development.local # Ignorar arquivo de configuração de ambiente de desenvolvimento.
+.env.test.local        # Ignorar arquivo de configuração de ambiente de teste.
+.env.production.local  # Ignorar arquivo de configuração de ambiente de produção.
+
+# Ignorar registros de npm e yarn gerados durante a instalação e execução dos pacotes.
+npm-debug.log*         # Ignorar registros de depuração do npm.
+yarn-debug.log*        # Ignorar registros de depuração do yarn.
+yarn-error.log*        # Ignorar registros de erro do yarn.

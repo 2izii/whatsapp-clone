@@ -1,0 +1,188 @@
+/* Comentários para o arquivo CSS */
+
+/* Estiliza o componente do footer do chat */
+.chat__footer {
+  display: flex; /* Define o layout do elemento como flexível */
+  justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  height: 62px; /* Define a altura do componente */
+  border-top: 1px solid lightgray; /* Adiciona uma borda superior com uma linha cinza clara */
+  transition: 1s; /* Adiciona uma transição suave de 1 segundo para animações */
+}
+
+/* Estiliza o formulário dentro do componente */
+.chat__footer > form {
+  flex: 1; /* Permite que o formulário ocupe o espaço disponível horizontalmente */
+  display: flex; /* Define o layout do elemento como flexível */
+}
+
+/* Estiliza a área de texto dentro do formulário */
+.chat__footer > form > textarea {
+  flex: 1; /* Permite que a área de texto ocupe o espaço disponível horizontalmente */
+  border-radius: 15px; /* Adiciona bordas arredondadas */
+  padding: 10px; /* Adiciona espaçamento interno */
+  border: none; /* Remove a borda */
+  font-size: 15px; /* Define o tamanho da fonte */
+  font-weight: 400; /* Define o peso da fonte */
+  min-height: 20px; /* Altura mínima da área de texto */
+  max-height: 100px; /* Altura máxima da área de texto */
+  resize: none; /* Impede o redimensionamento da área de texto */
+}
+
+/* Remove o contorno ao focar na área de texto */
+.chat__footer > form > textarea:focus {
+  outline: none;
+}
+
+/* Estiliza o botão dentro do formulário (não está sendo usado) */
+.chat__footer > form > button {
+  display: none; /* Esconde o botão */
+}
+
+/* Estiliza o ícone no rodapé */
+.chat__footer > .MuiSvgIcon-root {
+  padding: 10px; /* Adiciona espaçamento interno ao ícone */
+  color: gray; /* Define a cor do ícone como cinza */
+}
+
+/* Estiliza a seção de emojis (não está sendo usada) */
+.chat__footer_emoji {
+  display: none; /* Esconde a seção de emojis */
+}
+
+/* Estiliza o seletor de emojis */
+.emoji-mart {
+  position: absolute !important; /* Define a posição como absoluta (sobreposta) */
+  bottom: 60px; /* Define a distância do fundo da página */
+  width: 100% !important; /* Define a largura como 100% da largura do contêiner pai */
+  background-color: #f0f0f0; /* Define a cor de fundo como cinza claro */
+}
+
+/* Estiliza a barra de emojis */
+.emoji-mart-bar {
+  border: 0; /* Remove a borda da barra de emojis */
+}
+
+/* Estiliza os ícones de ancoragem na barra de emojis */
+.emoji-mart-anchors {
+  padding: 0; /* Remove o preenchimento das ancoragens */
+  border: 0; /* Remove a borda das ancoragens */
+}
+
+/* Estiliza o ícone de ancoragem na barra de emojis */
+.emoji-mart-anchor-icon {
+  color: #a3a3a3; /* Define a cor dos ícones de ancoragem como cinza */
+}
+
+/* Estiliza o ícone de ancoragem selecionado */
+.emoji-mart-anchor-selected {
+  color: red !important; /* Define a cor do ícone de ancoragem selecionado como vermelho */
+}
+
+/* Estiliza a âncora do seletor de emojis */
+.emoji-mart-anchor {
+  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre a âncora */
+}
+
+/* Estiliza a barra de ancoragem no seletor de emojis */
+.emoji-mart-anchor-bar {
+  background-color: #36aa9f !important; /* Define a cor de fundo da barra de ancoragem como verde */
+}
+
+/* Estiliza o ícone de ancoragem na barra de emojis */
+.emoji-mart-anchor-icon {
+  color: #8b8b8b !important; /* Define a cor dos ícones de ancoragem como cinza */
+}
+
+/* Estiliza a barra de pesquisa de emojis */
+.emoji-mart-search {
+  margin: 5px 8px 15px 8px; /* Adiciona margens à barra de pesquisa */
+}
+
+/* Estiliza o ícone de pesquisa de emojis (não está sendo usado) */
+.emoji-mart-search-icon {
+  display: none; /* Esconde o ícone de pesquisa */
+}
+
+/* Estiliza a entrada de texto na barra de pesquisa de emojis */
+.emoji-mart-search input {
+  font-size: 16px; /* Define o tamanho da fonte */
+  display: block; /* Torna a entrada de texto um bloco */
+  width: 100%; /* Define a largura como 100% do contêiner pai */
+  padding: 10px; /* Adiciona espaçamento interno */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  border: 0px solid #d9d9d9; /* Adiciona uma borda */
+  outline: 0; /* Remove o contorno ao focar */
+  background-color: #e6e6e6; /* Define a cor de fundo como cinza claro */
+  color: #4a4a4a; /* Define a cor do texto como cinza escuro */
+}
+
+/* Estiliza o espaço reservado (placeholder) na entrada de texto da barra de pesquisa de emojis */
+.emoji-mart-search input::placeholder {
+  color: #989898; /* Define a cor do espaço reservado como cinza claro */
+}
+
+/* Estiliza o rótulo da categoria na barra de emojis */
+.emoji-mart-category-label span {
+  display: block; /* Torna o rótulo um bloco */
+  width: 100%; /* Define a largura como 100% do contêiner pai */
+  font-weight: 500; /* Define o peso da fonte como negrito */
+  padding: 5px 6px; /* Adiciona espaçamento interno */
+  color: #b4b4b4; /* Define a cor do texto como cinza */
+  background-color: #f0f0f0; /* Define a cor de fundo como cinza claro */
+}
+
+/* Esconde a última barra na barra de emojis (não está sendo usada) */
+.emoji-mart-bar:last-child {
+  display: none; /* Esconde a última barra */
+}
+
+/* Estiliza a seção de anexar arquivos */
+.chat__attachFile {
+  position: absolute; /* Define a posição como absoluta (sobreposta) */
+  bottom: 70px; /* Define a distância do fundo da página */
+  display: flex; /* Define o layout do elemento como flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  z-index: 1000; /* Define a ordem de empilhamento (acima de outros elementos) */
+  overflow: hidden; /* Esconde o conteúdo que excede o contêiner */
+}
+
+/* Estiliza o ícone de anexar arquivos */
+.chat__attachFile > .MuiFab-root {
+  margin: 7px 0 7px 0; /* Adiciona margens ao ícone */
+}
+
+/* Estiliza o ícone no rótulo de anexar arquivos */
+.chat__icon {
+  height: 24px; /* Define a altura do ícone */
+}
+
+/* Estiliza o ícone de anexar arquivos e permite a seleção de arquivos */
+.chat__icon > label > .MuiSvgIcon-root {
+  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o ícone */
+}
+
+/* Esconde a entrada de arquivo (não está sendo usada) */
+.chat__icon > input {
+  display: none; /* Esconde a entrada de arquivo */
+}
+
+/* Estilos para telas menores (largura máxima de 600 pixels) */
+@media screen and (max-width: 600px) {
+  .chat__footer {
+    position: sticky; /* Define a posição como sticky (fixa) */
+    bottom: 0; /* Alinha o componente na parte inferior da tela */
+    z-index: 100; /* Define a ordem de empilhamento (acima de outros elementos) */
+    background-color: #045e54 !important; /* Define a cor de fundo como verde escuro (importante para substituir regras anteriores) */
+  }
+  .chat__footer > .MuiSvgIcon-root {
+    color: gray !important; /* Define a cor do ícone como cinza (importante para substituir regras anteriores) */
+  }
+  .emoji-mart {
+    position: absolute !important; /* Define a posição como absoluta (sobreposta) */
+    width: 100vw !important; /* Define a largura como 100% da largura da tela (importante para substituir regras anteriores) */
+  }
+  .emoji-mart-category-label {
+    top: -3px; /* Ajusta a posição do rótulo da categoria */
+  }
+}

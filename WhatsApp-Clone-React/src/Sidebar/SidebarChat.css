@@ -1,0 +1,69 @@
+/* Define as regras de estilo para o elemento com a classe 'sidebarChat'. */
+.sidebarChat {
+  display: flex; /* Configura o layout como flexível para os elementos filhos. */
+  padding: 15px; /* Adiciona preenchimento interno de 15 pixels. */
+  cursor: pointer; /* Define o cursor do mouse como 'pointer'. */
+  border-bottom: 1px solid #f6d6d6; /* Adiciona uma borda inferior com cor e espessura especificadas. */
+  /* height: 42px; */ /* Comentado, não aplicando altura fixa. */
+}
+
+/* Define as regras de estilo quando o mouse está sobre o elemento com a classe 'sidebarChat'. */
+.sidebarChat:hover {
+  background-color: #ebebeb; /* Altera a cor de fundo quando o mouse está sobre o elemento. */
+}
+
+/* Define as regras de estilo para o elemento com a classe 'sidebarChat__info'. */
+.sidebarChat__info {
+  width: 80% !important; /* Define a largura como 80% e utiliza '!important' para priorizar essa regra. */
+}
+
+/* Define as regras de estilo para os elementos de parágrafo, h2 e h3 dentro de '.sidebarChat__info'. */
+.sidebarChat__info > p,
+h2,
+h3 {
+  margin: 0 0 0 15px; /* Adiciona margem à esquerda para separar os elementos do conteúdo vizinho. */
+  color: #4a4a4a; /* Define a cor do texto. */
+  text-overflow: ellipsis; /* Adiciona reticências quando o texto estoura o contêiner. */
+  white-space: nowrap; /* Impede a quebra de linha no texto. */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões do contêiner. */
+}
+
+/* Define as regras de estilo para o elemento de cabeçalho h2 dentro de '.sidebarChat__info'. */
+.sidebarChat__info > h2 {
+  font-size: 16px; /* Define o tamanho da fonte. */
+}
+
+/* Define as regras de estilo para os elementos de parágrafo dentro de '.sidebarChat__info'. */
+.sidebarChat__info > p {
+  color: #a4a4a4; /* Define a cor do texto para um tom mais claro. */
+}
+
+/* Define as regras de estilo para o elemento com a classe 'sideChat__photo'. */
+.sideChat__photo {
+  margin: 0 0 0 15px; /* Adiciona margem à esquerda para separar os elementos do conteúdo vizinho. */
+  align-items: center; /* Centraliza os itens no eixo transversal (vertical) quando display é flexível. */
+  display: flex; /* Define o layout como flexível para os elementos filhos. */
+}
+
+/* Define as regras de estilo para o ícone SVG dentro de '.sideChat__photo'. */
+.sideChat__photo > .MuiSvgIcon-root {
+  color: #a4a4a4; /* Define a cor do ícone para um tom mais claro. */
+  font-size: 16px; /* Define o tamanho da fonte do ícone. */
+}
+
+/* Define as regras de estilo para o elemento de texto dentro de '.sideChat__photo'. */
+.sideChat__photo > span {
+  margin-left: 5px; /* Adiciona margem à esquerda para separar o ícone do texto. */
+  color: #a4a4a4; /* Define a cor do texto para um tom mais claro. */
+}
+
+/* Define as regras de estilo para o elemento de link '.sidebarChat__link'. */
+.sidebarChat__link {
+  text-decoration: none; /* Remove a decoração de texto do link. */
+  color: black; /* Define a cor do texto do link como preto. */
+}
+
+/* Define as regras de estilo para o elemento de cabeçalho h3 dentro de '.sidebarChat > div'. */
+.sidebarChat > div > h3 {
+  text-align: center; /* Centraliza o texto dentro do elemento de cabeçalho h3. */
+}

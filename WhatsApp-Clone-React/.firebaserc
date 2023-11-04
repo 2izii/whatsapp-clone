@@ -1,0 +1,10 @@
+// Este arquivo contém configurações para projetos.
+
+// No nível mais alto, dentro de "projects", especificamos o projeto padrão que será usado.
+// No caso deste arquivo, o projeto padrão é "whatsapp-clone-739899".
+
+{
+  "projects": {
+    "default": "whatsapp-clone-739899"
+  }
+}

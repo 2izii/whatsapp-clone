@@ -1,0 +1,244 @@
+/* Define o estilo para o lembrete de mensagem, indicando que as mensagens não são criptografadas */
+.chat__message_reminder {
+  background-color: #fdf4c4; /* Define a cor de fundo do lembrete */
+  font-size: 16px; /* Define o tamanho da fonte */
+  padding: 5px 10px 5px 10px; /* Adiciona espaço interno ao lembrete */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  width: fit-content; /* Define a largura do lembrete com base no conteúdo */
+  margin-bottom: 15px !important; /* Adiciona margem na parte inferior do lembrete */
+  margin: auto; /* Centraliza o lembrete horizontalmente */
+}
+
+/* Define o estilo para o ícone dentro do lembrete */
+.chat__message_reminder > .MuiSvgIcon-root {
+  color: #4a4a4a; /* Define a cor do ícone */
+  font-size: small; /* Define o tamanho da fonte do ícone */
+}
+
+/* Define o estilo para o lembrete indicando quem criou o grupo */
+.chat__createdBy {
+  margin-bottom: 70px !important; /* Adiciona margem na parte inferior do lembrete */
+  background-color: #e1f3fb !important; /* Define a cor de fundo do lembrete */
+}
+
+/* Define o estilo para as mensagens no chat */
+.chat__message {
+  position: relative; /* Define a posição como relativa para permitir posicionamento absoluto dos elementos filhos */
+  color: #4a4a4a; /* Define a cor do texto da mensagem */
+  font-size: 14px; /* Define o tamanho da fonte da mensagem */
+  padding: 6px 7px 8px 9px; /* Adiciona espaço interno à mensagem */
+  margin-bottom: 25px; /* Adiciona margem na parte inferior da mensagem */
+  border-radius: 6px; /* Adiciona bordas arredondadas à mensagem */
+  background-color: #ffffff; /* Define a cor de fundo da mensagem como branco */
+  white-space: normal; /* Permite que o texto da mensagem quebre em várias linhas conforme necessário */
+  width: fit-content; /* Define a largura da mensagem com base no conteúdo */
+}
+
+/* Define o estilo para mensagens enviadas pelo remetente */
+.chat__sender {
+  margin-left: auto; /* Alinha a mensagem à direita se for enviada pelo remetente */
+  background-color: #dcf8c6; /* Define a cor de fundo da mensagem enviada pelo remetente */
+}
+
+/* Define o estilo para mensagens de mídia (imagem ou vídeo) */
+.chat__message_media_image, .chat__message_media_video {
+  padding: 4px !important; /* Adiciona espaço interno à mensagem de mídia */
+  border-radius: 10px !important; /* Adiciona bordas arredondadas à mensagem de mídia */
+}
+
+/* Define o estilo para mensagens de vídeo sem legenda */
+.chat__message_media_video_noCaption {
+  padding: 0px !important; /* Remove o espaço interno da mensagem de vídeo sem legenda */
+  border-radius: 0px !important; /* Remove as bordas arredondadas da mensagem de vídeo sem legenda */
+}
+
+/* Define o estilo para o nome do remetente da mensagem */
+.chat__name {
+  top: -15px; /* Posiciona o nome acima da mensagem */
+  font-size: xx-small; /* Define o tamanho da fonte do nome do remetente */
+  font-weight: 800; /* Define a espessura da fonte como negrito */
+  white-space: nowrap; /* Impede que o nome do remetente quebre em várias linhas */
+  position: absolute; /* Define a posição como absoluta para permitir posicionamento preciso */
+}
+
+/* Define o estilo para o nome do remetente quando a mensagem é enviada pelo remetente */
+.chat__name_sender {
+  right: 10px; /* Alinha o nome do remetente à direita da mensagem enviada pelo remetente */
+}
+
+/* Define o estilo para o contêiner da imagem da mensagem */
+.chat__body_image_container {
+  display: flex; /* Permite que os elementos dentro do contêiner sejam exibidos em linha */
+  flex-direction: column; /* Organiza os elementos em coluna dentro do contêiner */
+  /* cursor: pointer; */ /* Define um cursor apontando para indicar que a imagem é clicável (comentado porque não está sendo utilizado) */
+}
+
+/* Define o estilo para a imagem da mensagem */
+.chat__body_image {
+  max-height: 200px; /* Define a altura máxima da imagem para evitar distorções */
+  max-width: 100%; /* Define a largura máxima da imagem para evitar distorções */
+  border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+/* Define o estilo para o contêiner de vídeo da mensagem */
+.chat__body_video_container {
+  display: flex; /* Permite que os elementos dentro do contêiner sejam exibidos em linha */
+  flex-direction: column; /* Organiza os elementos em coluna dentro do contêiner */
+}
+
+/* Define o estilo para o contêiner do player de vídeo */
+.player-wrapper {
+  position: relative; /* Define a posição como relativa para posicionar elementos filhos de forma absoluta dentro deste contêiner */
+  width: 30vw; /* Define a largura do contêiner como 30% da largura da viewport */
+  padding-top: 56.25%; /* Define a altura do contêiner como 56.25% da largura para manter a proporção 16:9 do vídeo */
+}
+
+/* Define o estilo para o reprodutor de vídeo dentro do contêiner */
+.react-player {
+  position: absolute; /* Define a posição como absoluta para posicionar o reprodutor no topo do contêiner */
+  top: 0; /* Alinha o topo do reprodutor ao topo do contêiner */
+  left: 0; /* Alinha a borda esquerda do reprodutor à borda esquerda do contêiner */
+}
+
+/* Define o estilo para o contêiner da caixa de mensagem */
+.chat__message_box {
+  display: flex; /* Permite que os elementos dentro do contêiner sejam exibidos em linha */
+  min-width: 70px; /* Define a largura mínima do contêiner */
+}
+
+/* Define o estilo para a caixa de texto da mensagem */
+.chat__message_box_text {
+  max-width: 30vw; /* Define a largura máxima da caixa de texto como 30% da largura da viewport */
+  word-break: break-word; /* Permite que o texto da caixa de texto quebre em várias linhas conforme necessário */
+  margin-bottom: 10px; /* Adiciona margem na parte inferior da caixa de texto */
+  margin-right: 5px; /* Adiciona margem à direita da caixa de texto */
+}
+
+/* Define o estilo para a caixa de texto da mensagem quando a mensagem consiste em apenas uma linha de texto */
+.chat__message_box_text_one_line {
+  padding-right: 55px; /* Adiciona espaço à direita da caixa de texto quando a mensagem tem apenas uma linha de texto */
+}
+
+/* Define o estilo para a caixa de texto da mensagem sem legenda */
+.chat__message_box_text_no_caption {
+  margin-bottom: 0 !important; /* Remove a margem na parte inferior da caixa de texto sem legenda */
+}
+
+/* Define o estilo para o contêiner do carimbo de data/hora da mensagem */
+.chat__timestamp_container {
+  margin-left: 25px; /* Adiciona margem à esquerda do contêiner do carimbo de data/hora */
+}
+
+/* Define o estilo para o carimbo de data/hora da mensagem */
+.chat__timestamp {
+  font-size: 10px; /* Define o tamanho da fonte do carimbo de data/hora */
+  font-weight: 500; /* Define a espessura da fonte do carimbo de data/hora */
+  position: absolute; /* Define a posição como absoluta para posicionar o carimbo de data/hora */
+  bottom: 3px; /* Alinha a borda inferior do carimbo de data/hora 3 pixels acima da borda inferior da caixa de mensagem */
+  right: 7px; /* Alinha a borda direita do carimbo de data/hora 7 pixels à esquerda da borda direita da caixa de mensagem */
+  color: rgb(155, 153, 153); /* Define a cor do texto do carimbo de data/hora */
+}
+
+/* Define o estilo para o carimbo de data/hora da mensagem de mídia (foto) */
+.chat__timestamp_media_photo {
+  color: #ffffff !important; /* Define a cor do texto do carimbo de data/hora da mensagem de mídia (foto) */
+  font-weight: 600; /* Define a espessura da fonte do carimbo de data/hora da mensagem de mídia (foto) como negrito */
+  font-size: 12px; /* Define o tamanho da fonte do carimbo de data/hora da mensagem de mídia (foto) */
+  right: 4px; /* Alinha a borda direita do carimbo de data/hora da mensagem de mídia (foto) a 4 pixels à esquerda da borda direita da caixa de mensagem */
+  border-radius: 0 0 8px 8px; /* Adiciona bordas arredondadas à parte inferior do carimbo de data/hora da mensagem de mídia (foto) */
+  left: 4px; /* Alinha a borda esquerda do carimbo de data/hora da mensagem de mídia (foto) a 4 pixels à direita da borda esquerda da caixa de mensagem */
+  height: 25px; /* Define a altura do carimbo de data/hora da mensagem de mídia (foto) */
+  background: linear-gradient(transparent 0%, #302c2c81 100%); /* Aplica um degradê de fundo ao carimbo de data/hora da mensagem de mídia (foto) */
+  margin-bottom: 0px !important; /* Remove a margem na parte inferior do carimbo de data/hora da mensagem de mídia (foto) */
+}
+
+/* Define o estilo para o carimbo de data/hora da mensagem de mídia (vídeo) */
+.chat__timestamp_media_video {
+  color: #eeeee3 !important; /* Define a cor do texto do carimbo de data/hora da mensagem de mídia (vídeo) */
+  font-weight: 600; /* Define a espessura da fonte do carimbo de data/hora da mensagem de mídia (vídeo) como negrito */
+  font-size: 12px; /* Define o tamanho da fonte do carimbo de data/hora da mensagem de mídia (vídeo) */
+  right: 0; /* Alinha a borda direita do carimbo de data/hora da mensagem de mídia (vídeo) à borda direita da caixa de mensagem */
+  bottom: 0; /* Alinha a borda inferior do carimbo de data/hora da mensagem de mídia (vídeo) à borda inferior da caixa de mensagem */
+  height: 30px; /* Define a altura do carimbo de data/hora da mensagem de mídia (vídeo) */
+  background: linear-gradient(transparent 0%, #302c2c81 100%); /* Aplica um degradê de fundo ao carimbo de data/hora da mensagem de mídia (vídeo) */
+  width: 100%; /* Define a largura do carimbo de data/hora da mensagem de mídia (vídeo) como 100% */
+}
+
+/* Define o estilo para o ícone de confirmação de entrega (check) no carimbo de data/hora */
+.chat__timestamp_media_photo > span, .chat__timestamp_media_video > span {
+  float: right; /* Alinha o ícone de confirmação de entrega à direita dentro do carimbo de data/hora */
+  margin-top: 5px; /* Adiciona margem ao topo do ícone de confirmação de entrega */
+  margin-right: 5px; /* Adiciona margem à direita do ícone de confirmação de entrega */
+}
+
+/* Define o estilo para ocultar o carimbo de data/hora quando o vídeo está sendo reproduzido */
+.chat__timestamp_media_displayNone {
+  display: none; /* Oculta o carimbo de data/hora da mensagem de mídia (vídeo) */
+}
+
+/* Define o estilo para o ícone de confirmação de entrega (check) no carimbo de data/hora */
+.chat__timestamp_container > .chat__timestamp > span > .MuiSvgIcon-root {
+  font-size: 13px !important; /* Define o tamanho do ícone de confirmação de entrega no carimbo de data/hora */
+  margin-left: 2px; /* Adiciona margem à esquerda do ícone de confirmação de entrega */
+}
+
+/* Define o estilo para telas com largura de dispositivo entre 600px e 800px */
+@media screen and (min-device-width: 600px) and (max-device-width: 800px) {
+  /* Aumenta a largura máxima da caixa de texto para acomodar mais texto */
+  .chat__message_box_text {
+    max-width: 60vw; /* Define a largura máxima da caixa de texto como 60% da largura da viewport */
+  }
+}
+
+/* Define o estilo para telas com largura de dispositivo até 600px (dispositivos móveis) */
+@media screen and (max-width: 600px) {
+  /* Reduz o tamanho da fonte do lembrete */
+  .chat__message_reminder {
+    font-size: 12px; /* Define o tamanho da fonte como 12px */
+  }
+
+  /* Adiciona margem na parte inferior do lembrete criado por */
+  .chat__createdBy {
+    margin-bottom: 50px !important; /* Adiciona margem na parte inferior do lembrete criado por */
+  }
+
+  /* Reduz o tamanho da fonte das mensagens */
+  .chat__message {
+    font-size: 12px; /* Define o tamanho da fonte como 12px */
+    padding: 4px 5px 6px 7px; /* Adiciona espaço interno à mensagem */
+    max-width: 75vw; /* Define a largura máxima da mensagem como 75% da largura da viewport */
+  }
+
+  /* Adiciona espaço interno às mensagens de mídia */
+  .chat__message_media {
+    padding: 4px !important; /* Adiciona espaço interno à mensagem de mídia */
+    border-radius: 4px !important; /* Adiciona bordas arredondadas à mensagem de mídia */
+  }
+
+  /* Adiciona margem à direita da caixa de texto das mensagens */
+  .chat__message_box_text {
+    padding-left: 5px; /* Adiciona espaço à esquerda da caixa de texto */
+    max-width: 60vw; /* Define a largura máxima da caixa de texto como 60% da largura da viewport */
+  }
+
+  /* Reduz o tamanho máximo da imagem na mensagem */
+  .chat__body_image {
+    max-height: 150px; /* Define a altura máxima da imagem como 150px */
+  }
+
+  /* Ajusta a largura do contêiner do player de vídeo */
+  .player-wrapper {
+    width: 75vw; /* Define a largura do contêiner como 75% da largura da viewport */
+  }
+
+  /* Adiciona margem à esquerda do contêiner do carimbo de data/hora */
+  .chat__timestamp_container {
+    margin-left: 45px; /* Adiciona margem à esquerda do contêiner do carimbo de data/hora */
+    margin-right: 5px; /* Adiciona margem à direita do contêiner do carimbo de data/hora */
+  }
+
+  /* Adiciona margem à esquerda do contêiner do carimbo de data/hora quando a mensagem é enviada pelo remetente */
+  .chat__timestamp_container_sender {
+    margin-left: 55px; /* Adiciona margem à esquerda do contêiner do carimbo de data/hora quando a mensagem é enviada pelo remetente */
+  }
+}

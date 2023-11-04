@@ -1,0 +1,124 @@
+/* As próximas duas linhas definem que os elementos <h3> e <p> não terão margem (espaço ao redor) */
+h3,
+p {
+  margin: 0;
+}
+
+/* A partir desta linha, o seletor .chat é definido, que se aplica a elementos com a classe "chat" */
+.chat {
+  /* Estabelece a flexibilidade do elemento em 70% do contêiner pai */
+  flex: 0.7;
+  /* Estabelece a exibição do elemento como flexível e em coluna */
+  display: flex;
+  flex-direction: column;
+  /* Define a posição do elemento como relativa em relação ao seu contêiner pai */
+  position: relative;
+}
+
+/* A partir desta linha, o seletor .Toastify__toast é definido, que se aplica a elementos com a classe "Toastify__toast" */
+.Toastify__toast {
+  /* Define o tamanho da fonte para 14 pixels */
+  font-size: 14px;
+  /* Define a altura mínima do elemento como 30 pixels (importante para o layout) */
+  min-height: 30px !important;
+  /* Define a altura máxima do elemento como 80 pixels (importante para o layout) */
+  max-height: 80px !important;
+  /* Define a posição superior do elemento como 60 pixels em relação ao topo do contêiner pai */
+  top: 60px;
+}
+
+/* A partir desta linha, o seletor .chat__header é definido, que se aplica a elementos com a classe "chat__header" */
+/* Define o preenchimento interno do elemento como 8 pixels */
+.chat__header {
+  padding: 8px;
+  /* Estabelece a exibição do elemento como flexível e centraliza os itens horizontalmente */
+  display: flex;
+  align-items: center;
+  /* Define uma borda inferior de 1 pixel sólido com a cor lightgray */
+  border-bottom: 1px solid lightgray;
+}
+
+/* As próximas linhas são comentários que marcam o início e o fim da seção de cabeçalho do chat */
+
+/* A partir desta linha, o seletor .chat__body é definido, que se aplica a elementos com a classe "chat__body" */
+/* Estabelece a flexibilidade do elemento em 1 para ocupar o espaço restante no contêiner pai */
+.chat__body {
+  flex: 1;
+  /* Define uma imagem de fundo para o elemento com repetição no eixo x e posição central */
+  background-image: url("../images/whatsapp-chat-bg.png");
+  /* Define o preenchimento interno do elemento com valores específicos */
+  padding: 40px 90px 0px 90px;
+  /* Define o overflow-y como scroll para habilitar a rolagem vertical */
+  overflow-y: scroll;
+  /* Define o overflow-x como oculto para esconder a rolagem horizontal */
+  overflow-x: hidden;
+}
+
+/* A partir desta linha, o seletor .chat__body_loading é definido, que se aplica a elementos com a classe "chat__body_loading" */
+/* Estabelece a exibição do elemento como uma tabela */
+.chat__body_loading {
+  display: table;
+  /* Define o alinhamento de texto centralizado e largura e altura de 100% */
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* A partir desta linha, o seletor ::-webkit-scrollbar é definido, que se aplica a barras de rolagem no navegador Chrome */
+/* Define a largura da barra de rolagem como 8 pixels */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* A partir desta linha, o seletor ::-webkit-scrollbar-thumb é definido, que se aplica ao polegar da barra de rolagem no Chrome */
+/* Define a cor de fundo do polegar como #b0aba6 */
+::-webkit-scrollbar-thumb {
+  background: #b0aba6;
+}
+
+/* A partir desta linha, o seletor .chat__body-2::-webkit-scrollbar-thumb é definido, que se aplica ao polegar da barra de rolagem em um contexto específico */
+.chat__body-2::-webkit-scrollbar-thumb {
+  /* Define a borda do polegar como arredondada e uma sombra interna */
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /* Define a cor de fundo do polegar como #737272 */
+  background-color: #737272;
+  /* Define uma borda sólida preta com 1 pixel de largura ao redor do polegar */
+  border: 1px solid #000;
+}
+
+/* A partir desta linha, a regra @media é definida para aplicar estilos específicos em telas com largura máxima de 600 pixels */
+@media screen and (max-width: 600px) {
+  /* Define a flexibilidade do elemento como 1 para ocupar o espaço total no contêiner pai */
+  .chat {
+    flex: 1;
+    height: 100vh;
+    width: 100vw;
+  }
+  /* Redefine o tamanho da fonte para 12 pixels e ajusta as alturas mínima e máxima do elemento */
+  .Toastify__toast {
+    font-size: 12px;
+    min-height: 30px !important;
+    max-height: 50px !important;
+    max-width: 80vw;
+    /* Define a margem superior do elemento como 20 pixels */
+    margin-top: 20px !important;
+    /* Define a margem horizontal do elemento como 0 e centraliza-o horizontalmente */
+    margin: 0 auto;
+  }
+
+  /* As próximas linhas são comentários que marcam o início e o fim da seção de cabeçalho do chat na regra @media */
+
+  /* A partir desta linha, o seletor .chat__body é redefinido para ajustar o preenchimento interno do elemento */
+  .chat__body {
+    padding: 40px 12px 0px 12px !important;
+  }
+}
+
+/* A partir desta linha, a regra @media é definida para aplicar estilos específicos em telas com largura máxima de 800 pixels */
+@media screen and (max-width: 800px) {
+  /* Ajusta o preenchimento interno do elemento .chat__body */
+  .chat__body {
+    padding: 40px 30px 0px 30px;
+  }
+}

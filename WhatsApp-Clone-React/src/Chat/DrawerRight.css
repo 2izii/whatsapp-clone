@@ -1,0 +1,190 @@
+/* Start: Drawer Right */
+
+/* Estilizando o cabeçalho do Drawer Right */
+.drawerRight__header {
+    background-color: #EDEDED; /* Cor de fundo do cabeçalho */
+    height: 65px; /* Altura do cabeçalho */
+    padding-left: 8px; /* Espaçamento interno à esquerda */
+    display: flex; /* Usando display flex para alinhar os itens */
+    align-items: center; /* Alinhando itens verticalmente ao centro */
+}
+
+/* Estilizando o contêiner do cabeçalho */
+.drawerRight__header_container {
+    display: flex; /* Usando display flex para alinhar os itens */
+    align-items: center; /* Alinhando itens verticalmente ao centro */
+}
+
+/* Estilizando o ícone de botão de fechar do Material-UI */
+.drawerRight__header > .MuiIconButton-root {
+    color: black; /* Cor do ícone */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+/* Estilizando o texto do cabeçalho */
+.drawerRight__header > p {
+    color: black; /* Cor do texto */
+    font-weight: 400; /* Peso da fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-left: 10px; /* Margem à esquerda */
+}
+
+/* Estilizando o contêiner de pesquisa */
+.drawerRight__search {
+    display: flex; /* Usando display flex para alinhar os itens */
+    align-items: center; /* Alinhando itens verticalmente ao centro */
+    background-color: #f6f6f6; /* Cor de fundo do contêiner de pesquisa */
+    height: 39px; /* Altura do contêiner de pesquisa */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilizando o contêiner de pesquisa dentro do Drawer */
+.drawerRight__searchContainer {
+    display: flex; /* Usando display flex para alinhar os itens */
+    align-items: center; /* Alinhando itens verticalmente ao centro */
+    background-color: white; /* Cor de fundo do contêiner de pesquisa */
+    width: 100%; /* Largura do contêiner de pesquisa */
+    border-radius: 20px; /* Raio da borda do contêiner */
+}
+
+/* Estilizando a caixa de entrada de pesquisa */
+.drawerRight__searchContainer > input {
+    border: none; /* Removendo a borda da caixa de entrada */
+    margin-left: 10px; /* Margem à esquerda */
+    outline: 0; /* Removendo o contorno ao focar */
+}
+
+/* Estilizando o ícone de pesquisa no contêiner de pesquisa */
+.drawerRight__searchContainer > .MuiSvgIcon-root {
+    color: grey; /* Cor do ícone */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilizando o conteúdo do Drawer Right */
+.drawerRight__content {
+    display: flex; /* Usando display flex para organizar os itens em coluna */
+    flex-direction: column; /* Organizando os itens em coluna */
+    overflow: scroll; /* Adicionando rolagem ao conteúdo */
+    -ms-overflow-style: none; /* Removendo a barra de rolagem no Internet Explorer 10+ */
+    scrollbar-width: none; /* Removendo a barra de rolagem no Firefox */
+    background-color: white; /* Cor de fundo do conteúdo */
+    flex: 1; /* Ocupando todo o espaço disponível */
+    padding: 50px; /* Espaçamento interno */
+    text-align: center; /* Alinhando o texto ao centro */
+}
+
+/* Estilizando o texto dentro do conteúdo */
+.drawerRight__content > p {
+    color: gray; /* Cor do texto */
+}
+
+/* Removendo a barra de rolagem no Chrome e Safari */
+.drawerRight__content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos para o conteúdo pesquisado */
+.drawerRight__content_searched {
+    padding: 0; /* Removendo o preenchimento do conteúdo pesquisado */
+}
+
+/* Estilos para as mensagens pesquisadas */
+.drawerRight__content_searched_message {
+    margin: 10px 0 10px 0; /* Margens da mensagem pesquisada */
+    text-align: left; /* Alinhando o texto à esquerda */
+}
+
+/* Estilos para o último parágrafo */
+#last_p {
+    white-space: nowrap; /* Impedindo quebrar palavras */
+    overflow: hidden; /* Ocultando o conteúdo que ultrapassa a largura */
+    text-overflow: ellipsis; /* Exibindo reticências quando o conteúdo é cortado */
+}
+
+/* Estilizando o ícone dentro do último parágrafo */
+#last_p > .MuiSvgIcon-root {
+    font-size: 14px; /* Tamanho do ícone */
+    margin-right: 2px; /* Margem à direita */
+}
+
+/* Estilizando o contêiner de foto dentro do conteúdo */
+.drawerRight__content_photo {
+    height: 180px; /* Altura do contêiner de foto */
+    padding: 8px 112px 50px 112px; /* Espaçamento interno */
+}
+
+/* Estilizando o avatar (foto do perfil) dentro do contêiner de foto */
+.drawerRight__content_photo > .MuiAvatar-root {
+    height: 200px; /* Altura do avatar */
+    width: 200px; /* Largura do avatar */
+}
+
+/* Estilizando o contêiner de nome dentro do conteúdo */
+.drawerRight__content_name {
+    height: 85px; /* Altura do contêiner de nome */
+    padding: 14px 35px 15px 30px; /* Espaçamento interno */
+    display: flex; /* Usando display flex para alinhar os itens */
+    flex-direction: column; /* Organizando os itens em coluna */
+    background-color: white; /* Cor de fundo do contêiner de nome */
+    margin-bottom: 20px; /* Margem na parte inferior */
+}
+
+/* Estilizando o texto do nome */
+.drawerRight__content_name > p {
+    color: #57BAB1; /* Cor do texto */
+    margin-bottom: 25px; /* Margem na parte inferior */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilizando o formulário dentro do contêiner de nome */
+.drawerRight__content_name > form {
+    display: flex; /* Usando display flex para alinhar os itens */
+    justify-content: space-between; /* Distribuindo o espaço entre os itens */
+    align-items: center; /* Alinhando itens verticalmente ao centro */
+}
+
+/* Estilizando a caixa de entrada no formulário */
+.drawerRight__content_name > form > input {
+    border: none; /* Removendo a borda da caixa de entrada */
+    font-size: 17px; /* Tamanho da fonte */
+    color: #666666; /* Cor do texto */
+    width: 100%; /* Largura da caixa de entrada */
+}
+
+/* Estilizando a caixa de entrada no formulário quando está em foco */
+.drawerRight__content_name > form > input:focus {
+    outline: 0 !important; /* Removendo o contorno ao focar */
+}
+
+/* Estilizando o ícone dentro do formulário */
+.drawerRight__content_name > form > .MuiSvgIcon-root {
+    color: #919191; /* Cor do ícone */
+    font-size: 20px !important; /* Tamanho do ícone */
+    cursor: pointer; /* Alterando o cursor para indicar interação */
+}
+
+/* Estilizando o cabeçalho da nota no Drawer Left */
+.sidebar__header_drawerNote {
+    height: 50px; /* Altura do cabeçalho */
+    background-color: #EDEDED; /* Cor de fundo do cabeçalho */
+    padding: 0 40px 28px 30px; /* Espaçamento interno */
+}
+
+/* Estilizando o texto dentro do cabeçalho da nota */
+.sidebar__header_drawerNote > span {
+    font-size: 14px; /* Tamanho da fonte */
+    color: #ADADAD; /* Cor do texto */
+}
+
+/* Estilos específicos para telas menores ou iguais a 600px de largura */
+@media screen and (max-width: 600px) {
+    .drawerRight__header {
+        background-color: #045E54; /* Cor de fundo do cabeçalho em telas menores */
+    }
+    .drawerRight__header > p {
+        color: white; /* Cor do texto em telas menores */
+    }
+}
+
+/* End: Drawer Right */

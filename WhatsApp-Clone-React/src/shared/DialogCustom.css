@@ -1,0 +1,21 @@
+/* Define as regras de estilo para elementos com a classe MuiDialogContent-root, que é parte do Material-UI DialogContent. */
+.MuiDialogContent-root {
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente no contêiner. */
+    padding: 0 24px !important; /* Adiciona preenchimento às laterais do conteúdo. A propriedade !important garante que essa regra de estilo prevaleça sobre outras. */
+    max-width: 100vw !important; /* Define a largura máxima do conteúdo como 100% da largura da viewport. A propriedade !important garante que essa regra de estilo prevaleça sobre outras. */
+}
+
+/* Define as regras de estilo para elementos com a classe DialogCustom__photo. */
+.DialogCustom__photo {
+    /* Define a altura máxima da foto como 80% da altura da viewport e a largura máxima como 80% da largura da viewport. */
+    max-width: 80vw; /* Define a largura máxima como 80% da largura da viewport. */
+    max-height: 80vh; /* Define a altura máxima como 80% da altura da viewport. */
+}
+
+/* Define regras de estilo específicas para telas com largura máxima de 600 pixels (dispositivos móveis). */
+@media screen and (max-width: 600px) {
+    /* Seleciona o elemento com o ID 'alert-dialog-title-dialogCustom' dentro do diálogo e muda sua cor de fundo para #045E54 quando a largura da tela é 600 pixels ou menos. */
+    #alert-dialog-title-dialogCustom{
+        background-color: #045E54 !important; /* Muda a cor de fundo para #045E54 (um tom de verde-azulado) com a propriedade !important para garantir que essa regra prevaleça sobre outras. */
+    }
+}

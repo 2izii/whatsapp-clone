@@ -1,0 +1,77 @@
+.chat-landing-screen {
+  /* Estilo para o contêiner principal do componente de tela de pouso do chat */
+  background-color: #f8f9fb !important; /* Cor de fundo do contêiner */
+  color: #b5b6b7; /* Cor do texto no contêiner */
+  height: 100vh; /* Altura do contêiner: 100% da altura da viewport */
+  padding: 10px; /* Espaçamento interno do contêiner */
+  display: flex; /* Usando o modelo de layout flexível */
+  flex-direction: column; /* Itens dispostos em coluna */
+  justify-content: center; /* Centralizando os itens verticalmente no contêiner */
+}
+
+.chat-landing-screen__photo {
+  /* Estilo para a imagem dentro do contêiner do componente */
+  width: 356px; /* Largura da imagem */
+  height: 355px; /* Altura da imagem */
+}
+
+.chat-landing-screen > .MuiDivider-root {
+  /* Estilo para o componente Divider dentro do contêiner do componente */
+  width: 460px !important; /* Largura do Divider */
+  margin: 0 auto; /* Margem automática para centralizar o Divider horizontalmente */
+  margin-top: 30px !important; /* Espaçamento superior do Divider */
+  margin-bottom: 30px !important; /* Espaçamento inferior do Divider */
+}
+
+.chat-landing-screen > div {
+  /* Estilo para os elementos <div> dentro do contêiner do componente */
+  max-width: 440px; /* Largura máxima das divs */
+  text-align: center; /* Alinhamento do texto no centro */
+  margin-top: 10px !important; /* Espaçamento superior das divs */
+  margin-bottom: 10px !important; /* Espaçamento inferior das divs */
+  margin: 0 auto; /* Margem automática para centralizar as divs horizontalmente */
+}
+
+.chat-landing-screen > .chat-landing-screen__title > p {
+  /* Estilo para o título do componente */
+  font-weight: 200 !important; /* Peso da fonte do título */
+  font-size: 36px; /* Tamanho da fonte do título */
+  color: #525252; /* Cor do texto do título */
+  margin-bottom: 25px; /* Espaçamento inferior do título */
+}
+
+.chat-landing-screen > div > p {
+  /* Estilo para os parágrafos dentro do contêiner do componente */
+  font-size: 14px; /* Tamanho da fonte dos parágrafos */
+  line-height: 20px; /* Altura da linha dos parágrafos */
+  align-items: center; /* Centralizando os itens verticalmente */
+}
+
+.chat-landing-screen__footer {
+  /* Estilo para o rodapé do componente */
+  display: flex; /* Usando o modelo de layout flexível para os itens do rodapé */
+  align-items: center; /* Centralizando os itens verticalmente no rodapé */
+  max-width: 360px !important; /* Largura máxima do rodapé */
+  margin-bottom: 20px; /* Espaçamento inferior do rodapé */
+}
+
+.chat-landing-screen__footer > a {
+  /* Estilo para os links dentro do rodapé */
+  color: #07bc4c; /* Cor do link */
+  text-decoration: none; /* Removendo a decoração de texto (sublinhado) do link */
+  font-size: 14px; /* Tamanho da fonte do link */
+  font-weight: 600; /* Peso da fonte do link */
+  margin-left: 5px; /* Espaçamento à esquerda do link */
+}
+
+.chat-landing-screen__footer > p {
+  /* Estilo para os parágrafos dentro do rodapé */
+  width: fit-content; /* Largura ajustada ao conteúdo do parágrafo */
+}
+
+.chat-landing-screen__footer > .MuiSvgIcon-root {
+  /* Estilo para os ícones dentro do rodapé */
+  font-size: 18px; /* Tamanho da fonte do ícone */
+  margin-right: 5px; /* Espaçamento à direita do ícone */
+  color: #919191; /* Cor do ícone */
+}

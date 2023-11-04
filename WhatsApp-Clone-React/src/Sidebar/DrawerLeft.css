@@ -1,0 +1,216 @@
+/* Estilos para o cabeçalho do painel lateral de perfil. */
+.drawerLeft__header {
+  background-color: #00bfa5; /* Define a cor de fundo do cabeçalho como verde. */
+  height: 107px; /* Define a altura do cabeçalho como 107 pixels. */
+  padding-left: 15px; /* Adiciona preenchimento à esquerda de 15 pixels. */
+}
+
+/* Estilos para o contêiner do cabeçalho do painel lateral de perfil. */
+.drawerLeft__header_container {
+  display: flex; /* Permite que os filhos do contêiner sejam exibidos em linha. */
+  align-items: center; /* Alinha os itens verticalmente no centro. */
+  margin-top: 50px; /* Adiciona margem superior de 50 pixels ao contêiner. */
+}
+
+/* Estilos para o ícone de botão no contêiner do cabeçalho. */
+.drawerLeft__header_container > .MuiIconButton-root {
+  color: white; /* Define a cor do ícone como branca. */
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels. */
+}
+
+/* Estilos para o parágrafo no contêiner do cabeçalho. */
+.drawerLeft__header_container > p {
+  color: white; /* Define a cor do texto como branca. */
+  font-weight: 600; /* Define a espessura da fonte como 600 (negrito). */
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels. */
+  margin-left: 10px; /* Adiciona margem à esquerda de 10 pixels ao parágrafo. */
+}
+
+/* Estilos para o conteúdo principal do painel lateral de perfil. */
+.drawerLeft__content {
+  display: flex; /* Permite que os filhos do conteúdo sejam exibidos em linha. */
+  flex-direction: column; /* Define a direção do layout como coluna. */
+  overflow: scroll; /* Adiciona uma barra de rolagem ao conteúdo quando necessário. */
+  -ms-overflow-style: none; /* Esconde a barra de rolagem no Internet Explorer 10+. */
+  scrollbar-width: none; /* Esconde a barra de rolagem em navegadores compatíveis. */
+  background-color: #ededed; /* Define a cor de fundo do conteúdo como cinza claro. */
+  flex: 1; /* Permite que o conteúdo do painel lateral cresça para ocupar o espaço disponível. */
+}
+
+/* Esconde a barra de rolagem no Safari e Chrome. */
+.drawerLeft__content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos para a seção da foto de perfil no painel lateral de perfil. */
+.drawerLeft__content_photo {
+  height: 200px; /* Define a altura da seção da foto de perfil como 200 pixels. */
+  padding-top: 8px; /* Adiciona preenchimento superior de 8 pixels à seção. */
+  padding-bottom: 30px; /* Adiciona preenchimento inferior de 30 pixels à seção. */
+  margin: 0 auto; /* Centraliza a seção horizontalmente na tela. */
+}
+
+/* Estilos para o avatar (foto de perfil) na seção da foto de perfil. */
+.drawerLeft__content_photo > .MuiAvatar-root {
+  height: 200px; /* Define a altura do avatar como 200 pixels. */
+  width: 200px; /* Define a largura do avatar como 200 pixels. */
+}
+
+/* Estilos para o contêiner da foto de perfil. */
+.profilePhoto {
+  height: auto; /* Define a altura da foto de perfil como automática. */
+  position: relative; /* Define a posição como relativa em relação ao contêiner pai. */
+  display: inline-block; /* Permite que o contêiner se comporte como um bloco em linha. */
+  overflow: hidden; /* Esconde o conteúdo que transborda do contêiner. */
+  cursor: pointer; /* Altera o cursor para um ponteiro quando passa sobre o contêiner. */
+}
+
+/* Estilos para o avatar na seção da foto de perfil. */
+.profilePhoto > .MuiAvatar-root {
+  height: 200px !important; /* Define a altura do avatar como 200 pixels (importante para substituir estilos existentes). */
+  width: 200px !important; /* Define a largura do avatar como 200 pixels (importante para substituir estilos existentes). */
+}
+
+/* Estilos para a camada inferior da foto de perfil. */
+.profilePhoto .profilePhoto__layer_bottom {
+  display: block; /* Exibe a camada inferior da foto de perfil. */
+}
+
+/* Estilos para a camada superior da foto de perfil (para alteração). */
+.profilePhoto .profilePhoto__layer_top {
+  opacity: 0; /* Define a opacidade da camada superior como 0 (invisível inicialmente). */
+  position: absolute; /* Define a posição como absoluta em relação ao contêiner pai. */
+  top: 0; /* Alinha a camada superior no topo do contêiner. */
+  left: 0; /* Alinha a camada superior à esquerda do contêiner. */
+  right: 0; /* Alinha a camada superior à direita do contêiner. */
+  bottom: 0; /* Alinha a camada superior na parte inferior do contêiner. */
+  width: 100%; /* Define a largura da camada superior como 100% do contêiner pai. */
+  height: 100%; /* Define a altura da camada superior como 100% do contêiner pai. */
+  border-radius: 50%; /* Define a borda como circular para criar uma forma de círculo. */
+  background: rgba(107, 101, 101, 0.6); /* Define a cor de fundo da camada superior com opacidade. */
+  color: #fff; /* Define a cor do texto como branca. */
+  transition: all 0.4s ease-in-out 0s; /* Adiciona uma transição suave a todas as propriedades com 0.4 segundos de duração. */
+}
+
+/* Torna a camada superior visível quando o cursor paira sobre a foto de perfil ou quando a foto está ativa. */
+.profilePhoto:hover .profilePhoto__layer_top,
+.profilePhoto.active .profilePhoto__layer_top {
+  opacity: 1; /* Define a opacidade da camada superior como 1 (totalmente visível). */
+}
+
+/* Estilos para o texto da camada superior da foto de perfil. */
+.profilePhoto__text {
+  display: flex; /* Permite que os filhos do texto sejam exibidos em linha. */
+  flex-direction: column; /* Define a direção do layout como coluna. */
+}
+
+/* Estilos para a seção do nome do usuário no painel lateral de perfil. */
+.drawerLeft__content_name {
+  height: 85px; /* Define a altura da seção do nome do usuário como 85 pixels. */
+  padding: 14px 35px 15px 30px; /* Adiciona preenchimento às margens internas da seção. */
+  display: flex; /* Permite que os filhos da seção sejam exibidos em linha. */
+  flex-direction: column; /* Define a direção do layout como coluna. */
+  background-color: white; /* Define a cor de fundo da seção como branca. */
+  margin-bottom: 20px; /* Adiciona margem inferior de 20 pixels à seção. */
+}
+
+/* Estilos para o rótulo do nome do usuário na seção do nome do usuário. */
+.drawerLeft__content_name > p {
+  color: #57bab1; /* Define a cor do texto como verde claro. */
+  margin-bottom: 25px; /* Adiciona margem inferior de 25 pixels ao rótulo. */
+  font-size: 14px; /* Define o tamanho da fonte como 14 pixels. */
+  font-weight: 600; /* Define a espessura da fonte como 600 (negrito). */
+}
+
+/* Estilos para o formulário de edição do nome do usuário na seção do nome do usuário. */
+.drawerLeft__content_name > form {
+  display: flex; /* Permite que os filhos do formulário sejam exibidos em linha. */
+  justify-content: space-between; /* Distribui o espaço entre os filhos do formulário. */
+  align-items: center; /* Alinha os itens verticalmente no centro. */
+}
+
+/* Estilos para o campo de entrada do nome do usuário no formulário. */
+.drawerLeft__content_name > form > input {
+  border: none; /* Remove a borda do campo de entrada. */
+  border-bottom: 2px solid #00bfa5 !important; /* Adiciona uma borda inferior de 2 pixels na cor verde. */
+  font-size: 17px; /* Define o tamanho da fonte como 17 pixels. */
+  color: #666666; /* Define a cor do texto como cinza escuro. */
+  width: 100%; /* Define a largura do campo de entrada como 100%. */
+}
+
+/* Estilos para o texto de nome do usuário na seção do nome do usuário (modo de visualização). */
+.drawerLeft__content_name > form > span {
+  border: none; /* Remove a borda do texto de nome do usuário. */
+  font-size: 17px; /* Define o tamanho da fonte como 17 pixels. */
+  color: #666666; /* Define a cor do texto como cinza escuro. */
+  width: 100%; /* Define a largura do texto como 100%. */
+  white-space: nowrap; /* Impede a quebra de linha no texto. */
+  overflow: hidden; /* Esconde o conteúdo que transborda do contêiner. */
+  text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa o contêiner. */
+}
+
+/* Remove o contorno ao focar no campo de entrada do nome do usuário. */
+.drawerLeft__content_name > form > input:focus {
+  outline: 0 !important; /* Remove o contorno ao focar no campo de entrada. */
+}
+
+/* Estilos para o ícone de edição na seção do nome do usuário. */
+.drawerLeft__content_name > form > .MuiSvgIcon-root {
+  color: #919191; /* Define a cor do ícone como cinza. */
+  font-size: 20px !important; /* Define o tamanho da fonte do ícone como 20 pixels (importante para substituir estilos existentes). */
+  cursor: pointer; /* Altera o cursor para um ponteiro quando passa sobre o ícone. */
+}
+
+/* Estilos para a nota informativa no painel lateral de perfil. */
+.drawerLeft__note {
+  height: 50px; /* Define a altura da nota informativa como 50 pixels. */
+  background-color: #ededed; /* Define a cor de fundo da nota informativa como cinza claro. */
+  padding: 0 40px 28px 30px; /* Adiciona preenchimento às margens internas da nota informativa. */
+}
+
+/* Estilos para o texto da nota informativa. */
+.drawerLeft__note > span {
+  font-size: 14px; /* Define o tamanho da fonte como 14 pixels. */
+  color: #adadad; /* Define a cor do texto como cinza. */
+}
+
+/* Estilos para componentes específicos do Material-UI. */
+.MuiDialogContent-root {
+  margin: 0 auto; /* Centraliza o conteúdo do diálogo horizontalmente na tela. */
+  padding: 0 24px !important; /* Adiciona preenchimento às margens internas do conteúdo do diálogo. */
+  max-width: 545px; /* Define a largura máxima do conteúdo do diálogo como 545 pixels. */
+}
+
+/* Estilos para componentes específicos do Material-UI. */
+.MuiTypography-h6 {
+  display: flex; /* Permite que os filhos do componente sejam exibidos em linha. */
+}
+
+/* Estilos para o último filho do componente MuiTypography-h6. */
+.MuiTypography-h6 div:last-child {
+  margin-left: auto; /* Alinha o último filho à esquerda do componente. */
+  margin-right: 15px; /* Adiciona margem à direita ao último filho. */
+}
+
+/* Estilos para a imagem da foto de perfil no conteúdo do diálogo. */
+.drawerLeft__content_photo_img {
+  width: 100%; /* Define a largura da imagem como 100% do contêiner pai. */
+  height: auto; /* Define a altura da imagem como automática. */
+}
+
+/* Estilos para o título do diálogo com ID específico. */
+#form-dialog-title-drawerLeft {
+  background-color: #00bfa5 !important; /* Define a cor de fundo do título como verde (importante para substituir estilos existentes). */
+}
+
+/* Estilos para o conteúdo do diálogo com ID específico. */
+#form-dialog-content {
+  padding: 0 !important; /* Remove o preenchimento interno do conteúdo do diálogo (importante para substituir estilos existentes). */
+}
+
+/* Estilos para dispositivos com largura de tela de até 600 pixels. */
+@media screen and (max-width: 600px) {
+  .MuiDialogContent-root {
+    padding: 25px 24px !important; /* Adiciona preenchimento às margens internas do conteúdo do diálogo em dispositivos móveis (importante para substituir estilos existentes). */
+  }
+}

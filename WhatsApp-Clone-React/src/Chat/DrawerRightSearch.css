@@ -1,0 +1,210 @@
+/* Start: Drawer Right */
+
+/* Estilos para o cabeçalho do painel lateral */
+.drawerRight__header {
+  background-color: #ededed; /* Cor de fundo do cabeçalho */
+  height: 65px; /* Altura do cabeçalho */
+  padding-left: 8px; /* Espaçamento à esquerda */
+  display: flex; /* Usa o modelo de layout flexível */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Estilos para o contêiner do cabeçalho */
+.drawerRight__header_container {
+  display: flex; /* Usa o modelo de layout flexível */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Estilos para o ícone de fechar no cabeçalho */
+.drawerRight__header > .MuiIconButton-root {
+  color: black; /* Cor do ícone */
+  font-size: 18px; /* Tamanho da fonte do ícone */
+}
+
+/* Estilos para o título no cabeçalho */
+.drawerRight__header > p {
+  color: black; /* Cor do texto */
+  font-weight: 400; /* Peso da fonte */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-left: 10px; /* Margem à esquerda */
+}
+
+/* Estilos para a barra de pesquisa no painel lateral */
+.drawerRight__search {
+  display: flex; /* Usa o modelo de layout flexível */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  background-color: #f6f6f6; /* Cor de fundo da barra de pesquisa */
+  height: 39px; /* Altura da barra de pesquisa */
+  padding: 10px; /* Preenchimento interno */
+}
+
+/* Estilos para o contêiner da barra de pesquisa */
+.drawerRight__searchContainer {
+  display: flex; /* Usa o modelo de layout flexível */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  background-color: white; /* Cor de fundo do contêiner da barra de pesquisa */
+  width: 100%; /* Largura do contêiner */
+  border-radius: 20px; /* Raio da borda do contêiner */
+}
+
+/* Estilos para o campo de entrada na barra de pesquisa */
+.drawerRight__searchContainer > input {
+  border: none; /* Remove a borda do campo de entrada */
+  margin-left: 10px; /* Margem à esquerda */
+  outline: 0; /* Remove o contorno ao focar */
+}
+
+/* Estilos para o ícone de pesquisa na barra de pesquisa */
+.drawerRight__searchContainer > .MuiSvgIcon-root {
+  color: grey; /* Cor do ícone de pesquisa */
+  padding: 10px; /* Preenchimento interno */
+}
+
+/* Estilos para o conteúdo do painel lateral */
+.drawerRight__content {
+  display: flex; /* Usa o modelo de layout flexível */
+  flex-direction: column; /* Empilha os itens verticalmente */
+  overflow: scroll; /* Adiciona uma barra de rolagem quando necessário */
+  -ms-overflow-style: none; /* Esconde a barra de rolagem no Internet Explorer */
+  scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+  background-color: white; /* Cor de fundo do conteúdo */
+  flex: 1; /* Cresce para preencher o espaço disponível */
+  padding: 50px; /* Preenchimento interno */
+  text-align: center; /* Alinhamento do texto ao centro */
+  min-width: 240px; /* Largura mínima do painel lateral */
+  max-width: 240px; /* Largura máxima do painel lateral */
+}
+
+/* Estilos para o texto de aviso no conteúdo */
+.drawerRight__content > p {
+  color: gray; /* Cor do texto de aviso */
+}
+
+/* Esconde a barra de rolagem no Webkit (Safari e Chrome) */
+.drawerRight__content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos para o conteúdo quando há resultados de pesquisa */
+.drawerRight__content_searched {
+  padding: 0; /* Remove o preenchimento do conteúdo */
+  min-width: 240px; /* Largura mínima quando há resultados de pesquisa */
+  max-width: 340px; /* Largura máxima quando há resultados de pesquisa */
+}
+
+/* Estilos para cada mensagem encontrada */
+.drawerRight__content_searched_message {
+  margin: 10px 0 10px 0; /* Margens da mensagem */
+  text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilos para o parágrafo dentro de cada mensagem encontrada */
+.drawerRight__content_searched_message > p {
+  padding-left: 10px; /* Espaçamento à esquerda do texto */
+  color: gray; /* Cor do texto da mensagem */
+  font-size: 14px; /* Tamanho da fonte da mensagem */
+}
+
+/* Estilos para a linha divisória entre as mensagens */
+.drawerRight__content_searched_message > .MuiDivider-root {
+  margin-top: 10px; /* Margem superior da linha divisória */
+}
+
+/* Estilos para o último parágrafo com texto de mensagem */
+#last_p {
+  white-space: nowrap; /* Não quebra o texto em várias linhas */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa o contêiner */
+  text-overflow: ellipsis; /* Exibe reticências (...) para indicar texto cortado */
+}
+
+/* Estilos para o ícone dentro do último parágrafo */
+#last_p > .MuiSvgIcon-root {
+  font-size: 14px; /* Tamanho da fonte do ícone */
+  margin-right: 2px; /* Margem à direita do ícone */
+}
+
+/* Estilos para o conteúdo da foto no painel lateral */
+.drawerRight__content_photo {
+  height: 180px; /* Altura do contêiner da foto */
+  padding: 8px 112px 50px 112px; /* Preenchimento interno */
+}
+
+/* Estilos para o avatar na foto do painel lateral */
+.drawerRight__content_photo > .MuiAvatar-root {
+  height: 200px; /* Altura do avatar */
+  width: 200px; /* Largura do avatar */
+}
+
+/* Estilos para o contêiner do nome no painel lateral */
+.drawerRight__content_name {
+  height: 85px; /* Altura do contêiner do nome */
+  padding: 14px 35px 15px 30px; /* Preenchimento interno */
+  display: flex; /* Usa o modelo de layout flexível */
+  flex-direction: column; /* Empilha os itens verticalmente */
+  background-color: white; /* Cor de fundo do contêiner do nome */
+  margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para o parágrafo dentro do contêiner do nome */
+.drawerRight__content_name > p {
+  color: #57bab1; /* Cor do texto do nome */
+  margin-bottom: 25px; /* Margem inferior do parágrafo */
+  font-size: 14px; /* Tamanho da fonte do texto do nome */
+  font-weight: 600; /* Peso da fonte do texto do nome */
+}
+
+/* Estilos para o formulário dentro do contêiner do nome */
+.drawerRight__content_name > form {
+  display: flex; /* Usa o modelo de layout flexível */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Estilos para o campo de entrada dentro do formulário */
+.drawerRight__content_name > form > input {
+  border: none; /* Remove a borda do campo de entrada */
+  font-size: 17px; /* Tamanho da fonte do campo de entrada */
+  color: #666666; /* Cor do texto do campo de entrada */
+  width: 100%; /* Largura total do campo de entrada */
+}
+
+/* Estilos para o campo de entrada quando está em foco */
+.drawerRight__content_name > form > input:focus {
+  outline: 0 !important; /* Remove o contorno ao focar */
+}
+
+/* Estilos para o ícone de lápis dentro do formulário */
+.drawerRight__content_name > form > .MuiSvgIcon-root {
+  color: #919191; /* Cor do ícone de lápis */
+  font-size: 20px !important; /* Tamanho da fonte do ícone de lápis */
+  cursor: pointer; /* Altera o cursor para indicar clicabilidade */
+}
+
+/* Estilos para o cabeçalho do painel lateral na nota */
+.sidebar__header_drawerNote {
+  height: 50px; /* Altura do cabeçalho da nota */
+  background-color: #ededed; /* Cor de fundo do cabeçalho da nota */
+  padding: 0 40px 28px 30px; /* Preenchimento interno */
+}
+
+/* Estilos para o texto no cabeçalho da nota */
+.sidebar__header_drawerNote > span {
+  font-size: 14px; /* Tamanho da fonte do texto na nota */
+  color: #adadad; /* Cor do texto na nota */
+}
+
+/* End: Drawer Right */
+
+/* Estilos para telas menores que 600px de largura */
+@media screen and (max-width: 600px) {
+  /* Altera a cor de fundo do cabeçalho quando a tela é menor que 600px */
+  .drawerRight__header {
+    background-color: #045e54;
+  }
+
+  /* Altera a cor do texto do cabeçalho quando a tela é menor que 600px */
+  .drawerRight__header > p {
+    color: white;
+  }
+}
+
